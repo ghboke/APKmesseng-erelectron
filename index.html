@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh">
+<head id="body">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apk Message</title>
+    <link rel="stylesheet" href="app-css/default.css">
+    <link rel="stylesheet" href="module/layui/css/layui.css">
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            font-family: "Microsoft YaHei";
+        }
+
+        #main {
+            padding: 20px;
+            width: 100%;
+            min-height: 100%;
+            height: auto;
+        }
+
+        #basicMsg {
+            min-height: 200px;
+        }
+
+        #apkBasicMsg {
+            display: inline;
+            position: absolute;
+            left: 200px;
+            padding: 5px;
+        }
+
+        .layui-form-label {
+            text-align: left !important;
+        }
+
+        .layui-form-item {
+            margin: 0 !important;
+        }
+#apkimg{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+    </style>
+
+</head>
+<body>
+
+<div id="main" class="layui-container">
+    <div id="basicMsg">
+        <img id="apkimg" src="resource/logo.png" alt="">
+        <div id="apkBasicMsg" class="layui-form">
+            <div class="layui-form-item">
+                <label class="layui-form-label">软件名：</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-verify="required">
+                    </select>
+                </div>
+                <div class="layui-form-mid" id="application-label">等待读取</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">包名：</label>
+                <div class="layui-form-mid" id="packagename">等待读取</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">版本名：</label>
+                <div class="layui-form-mid" id="versionName">等待读取</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">版本号：</label>
+                <div class="layui-form-mid" id="versionCode">等待读取</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">加固类型：</label>
+                <div class="layui-form-mid" id="protecttype">等待读取</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">MD5：</label>
+                <div class="layui-form-mid" id="md5">等待读取</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="layui-tab">
+        <ul class="layui-tab-title">
+            <li class="layui-this">基本信息</li>
+            <li>权限信息</li>
+            <li>签名信息</li>
+            <li>其他信息</li>
+            <li>窗口信息</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="150">
+                        <col width="200">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>昵称</th>
+                        <th>加入时间</th>
+                        <th>签名</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="layui-tab-item">内容2</div>
+            <div class="layui-tab-item">内容3</div>
+            <div class="layui-tab-item">内容4</div>
+            <div class="layui-tab-item">内容5</div>
+        </div>
+    </div>
+</div>
+<script src="module/jquery-3.2.1.min.js"></script>
+<script src="module/layui/layui.all.js"></script>
+<script type="text/javascript">
+    window.$ = window.jQuery = require('./module/layui/lay/modules/jquery.js');
+</script>
+<script src="app-js/index.js"></script>
+</body>
+</html>
